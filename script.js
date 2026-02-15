@@ -17,14 +17,12 @@ const THEMES = {
 
 /**
  * Данные выступающих.
- * Замените плейсхолдеры на реальные ФИО / группы / названия стихотворений.
  */
 const SPEAKERS = [
   { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "philosophy" },
   { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "love" },
   { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "civic" },
   { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "landscape" },
-  { name: "—", group: "список будет дополняться", poem: "Отправьте данные — я быстро внесу в массив SPEAKERS", theme: "love" },
 ];
 
 function qs(sel, root = document) { return root.querySelector(sel); }
