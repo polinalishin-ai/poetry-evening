@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#160d06" name="theme-color"/>
 <title>Вечер поэзии • Библиотека забытых голосов</title>
-<meta content="Поэтический вечер «Библиотека забытых голосов» — 27 февраля 2026, 18:00. Актовый зал АТИ. Темы: любовь, философия, гражданская и пейзажная лирика." name="description"/>
+<meta content="Поэтический вечер «Библиотека забытых голосов» — 27 февраля 2026, 18:00. Актовый зал АТИ. Темы: любовь, философия и пейзажная лирика." name="description"/>
 <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
@@ -26,7 +26,6 @@
 <a class="nav__link" href="#program">Программа</a>
 <a class="nav__link" href="#themes">Темы</a>
 <a class="nav__link" href="#speakers">Выступающие</a>
-<a class="nav__link" href="#guests">Гости</a>
 <a class="nav__link nav__link--cta" href="#register">Регистрация</a>
 </nav>
 <button aria-expanded="false" aria-label="Открыть меню" class="navbtn" type="button">
@@ -41,7 +40,6 @@
 <a class="drawer__link" href="#program">Программа</a>
 <a class="drawer__link" href="#themes">Темы</a>
 <a class="drawer__link" href="#speakers">Выступающие</a>
-<a class="drawer__link" href="#guests">Гости</a>
 <a class="drawer__link drawer__link--cta" href="#register">Регистрация</a>
 </nav>
 </div>
@@ -83,7 +81,7 @@
   
   <div class="meta__item">
     <div class="meta__label">Темы</div>
-    <div class="meta__value">любовь • философия • гражданская лирика • пейзажная лирика</div>
+    <div class="meta__value">любовь • философия • пейзажная лирика</div>
   </div>
   
   <div class="meta__item">
@@ -203,11 +201,6 @@
 <p>Смысл, выбор, время, внутренние вопросы - то, что заставляет остановиться и услышать себя.</p>
 </article>
 <article class="tile">
-<div aria-hidden="true" class="tile__mark">✶</div>
-<h3 class="h3">Гражданская лирика</h3>
-<p>Родина, долг, память, голос поколения. Сила слова, которое держит и поддерживает.</p>
-</article>
-<article class="tile">
 <div aria-hidden="true" class="tile__mark">❦</div>
 <h3 class="h3">Пейзажная лирика</h3>
 <p>Природа, города, погода, свет. Здесь «я вижу» превращается в «я чувствую».</p>
@@ -216,15 +209,12 @@
 </div>
 </section>
 <!-- PAGE 5 -->
-<section aria-label="Доска выступающих" class="section board" id="speakers" style="--bg:url('assets/фон%205.jpg')">
+<section aria-label="Доска выступающих" class="section board" id="speakers" style="--bg:url('assets/фон%207.jpg')">
 <div class="board__overlay"></div>
 <div class="container reveal">
 <div class="board__head">
 <div>
 <h2 class="h2">Доска выступающих</h2>
-<p class="lead">
-              ждем список
-            </p>
 </div>
 <div class="search">
 <label class="sr" for="q">Поиск</label>
@@ -235,105 +225,18 @@
 <button class="chip is-active" data-theme="all" type="button">Все</button>
 <button class="chip" data-theme="love" type="button">Любовь</button>
 <button class="chip" data-theme="philosophy" type="button">Философия</button>
-<button class="chip" data-theme="civic" type="button">Гражданская лирика</button>
 <button class="chip" data-theme="landscape" type="button">Пейзажная лирика</button>
 </div>
 <div aria-live="polite" class="grid grid--3" id="speakerGrid"></div>
-<p class="note">
-          Здесь появится информация о выступающих
-        </p>
 </div>
 </section>
-<!-- PAGE 6 -->
-<section aria-label="Почётные гости" class="section guests" id="guests" style="--bg:url('assets/фон%207.jpg')">
-<div class="guests__overlay"></div>
-<div class="container reveal">
-<h2 class="h2">Почётные гости</h2>
-<p class="lead">Преподавательский состав</p>
-<div class="grid grid--4">
-<article class="guest">
-<div class="avatar">
-<img alt="Овчаренко А. Ю." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/ovcharenko.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">ОА</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Овчаренко А. Ю.</div>
-<div class="guest__role">профессор кафедры русского языка и лингвокультурологии</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Брагина М. А." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/bragina.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">БМ</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Брагина М. А.</div>
-<div class="guest__role">заместитель директора по учебной работе</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Конькова С. А." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/danilova.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">КС</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Конькова С. А.</div>
-<div class="guest__role">педагог дополнительного образования кафедры русского языка и межкультурной коммуникации</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Софронова Е. А." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/sofronova.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">СЕ</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Софронова Е. А.</div>
-<div class="guest__role">заведующий кафедрой прикладной информатики и интеллектуальных систем в гуманитарной сфере</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Кротова Т. А." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/krotova.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">КТ</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Кротова Т. А.</div>
-<div class="guest__role">заместитель директора по воспитательной работе</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Румянцева О. В." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/rumanceva.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">РО</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Румянцева О. В.</div>
-<div class="guest__role">заместитель директора по научной работе</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Александров И. А." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/aleksandrov.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">АИ</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Александров И. А.</div>
-<div class="guest__role">тьютор по воспитательной работе</div>
-</div>
-</article>
-<article class="guest">
-<div class="avatar">
-<img alt="Новикова М. А." decoding="async" loading="lazy" onerror="this.closest('.avatar').classList.add('avatar--fallback'); this.remove();" src="assets/guests/novikova.jpg"/>
-<span aria-hidden="true" class="avatar__fallback">НМ</span>
-</div>
-<div class="guest__body">
-<div class="guest__name">Новикова М. А.</div>
-<div class="guest__role">профессор кафедры русского языка и лингвокультурологии</div>
-</div>
-</article>
-</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
 </div>
 </section>
+
 
 <!-- PAGE 7 -->
 <section aria-label="Регистрация и контакты" class="section register" id="register" style="--bg:url('assets/фон%209.jpeg')">

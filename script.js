@@ -4,26 +4,51 @@
 
 const CONFIG = {
   // Замените на ваши ссылки на формы регистрации:
-  REG_GUEST_URL: "#",
-  REG_SPEAKER_URL: "#",
+  REG_GUEST_URL: "https://docs.google.com/forms/d/e/1FAIpQLSeR7JIPYumgRkp-HveWNcJi3I09TeLTbbjC2rquCXYiFQao8A/viewform?usp=publish-editor",
+  REG_SPEAKER_URL: "https://docs.google.com/forms/d/e/1FAIpQLSeR7M9hu-DCq12bXwJLJGcZMcD6yli1HMWNZ8fQ-Ki5PeIt3w/viewform?usp=publish-editor",
 };
 
 const THEMES = {
   love: { label: "Любовь", color: "love" },
   philosophy: { label: "Философия", color: "philosophy" },
-  civic: { label: "Гражданственность", color: "civic" },
   landscape: { label: "Пейзаж", color: "landscape" },
 };
 
-/**
- * Данные выступающих.
- */
-const SPEAKERS = [
-  { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "philosophy" },
-  { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "love" },
-  { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "civic" },
-  { name: "Имя Фамилия", group: "курс • группа", poem: "«Название стихотворения»", theme: "landscape" },
+
+
+const speakers = [
+
+  // ===== ФИЛОСОФИЯ =====
+  { name: "Танкович Софья", poem: "«Мы любим лишь моменты...»", theme: "philosophy" },
+  { name: "Семенова Ева", poem: "«Дневник допишу...»", theme: "philosophy" },
+  { name: "Лиза Шапринская", poem: "«Льются слезы в сердце моем...»", theme: "philosophy" },
+  { name: "Лишина Полина", poem: "«Что есть предательство своего обещания?»", theme: "philosophy" },
+  { name: "Константин Климов", poem: "«За дверьми погасший день оставил...»", theme: "philosophy" },
+  { name: "Быкова Амина", poem: "«Поколение нуля»", theme: "philosophy" },
+  { name: "Приходько Пётр", poem: "«Ноябрьский сон»", theme: "philosophy" },
+  { name: "Михаил Клочков", poem: "«Хроника многолетние поисков»", theme: "philosophy" },
+  { name: "Быкова Амина", poem: "«Теложурналистика»", theme: "philosophy" },
+  { name: "Семенова Ева", poem: "«А если взять привычку...»", theme: "philosophy" },
+  { name: "Марченкова Арсений", poem: "«Река, нога, в руке палка...»", theme: "philosophy" },
+
+  // ===== ЛЮБОВЬ =====
+  { name: "Мородумова Алина", poem: "«Я хотела бы написать о нас песню..»", theme: "love" },
+  { name: "Журина Алина", poem: "«Ступая на лед осторожно...»", theme: "love" },
+  { name: "Клокова Ольга", poem: "«Мне б только знать»", theme: "love" },
+  { name: "Журина Алина", poem: "«Миг до курантов боя..»", theme: "love" },
+  { name: "Мородумова Алина", poem: "«Я помню, как он носил меня на руках...»", theme: "love" },
+  { name: "Клокова Ольга", poem: "«Стреляй»", theme: "love" },
+  { name: "Мородумова Алина", poem: "«И ветер не знает, куда он несет корабли...»", theme: "love" },
+  { name: "Танкович Софья", poem: "«Вы смотрели на меня...»", theme: "love" },
+  { name: "Константин Климов", poem: "«Сердце ярко стучит в унисон...»", theme: "love" },
+
+  // ===== ПЕЙЗАЖ =====
+  { name: "Михаил Клочков", poem: "«Гуляя по Невскому проспекту»", theme: "landscape" },
+  { name: "Константин Климов", poem: "«Над Землёй восходила большая Луна...»", theme: "landscape" },
+  { name: "Приходько Пётр", poem: "«Глубокий пушистый снег...»", theme: "landscape" },
+
 ];
+
 
 function qs(sel, root = document) { return root.querySelector(sel); }
 function qsa(sel, root = document) { return Array.from(root.querySelectorAll(sel)); }
@@ -198,7 +223,7 @@ function initBoard() {
   const apply = () => {
     const q = query.trim().toLowerCase();
 
-    const filtered = SPEAKERS.filter(sp => {
+    const filtered = speakers.filter(sp => {
       const okTheme = activeTheme === "all" ? true : sp.theme === activeTheme;
 
       if (!okTheme) return false;
@@ -227,7 +252,7 @@ function initBoard() {
     });
   }
 
-  renderSpeakers(SPEAKERS);
+  renderSpeakers(speakers);
 }
 
 function init() {
